@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "cust1",
+				"fileName": "cust1.csv",
 				"container": "bhp-hpa"
 			},
 			"columnDelimiter": ",",
