@@ -1,0 +1,44 @@
+{
+	"name": "ds_blob",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"parm_filename": {
+				"type": "string"
+			},
+			"parm_header": {
+				"type": "bool"
+			},
+			"parm_delimiter_col": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().parm_filename",
+					"type": "Expression"
+				},
+				"container": "bhp-hpa"
+			},
+			"columnDelimiter": {
+				"value": "@dataset().parm_delimiter_col",
+				"type": "Expression"
+			},
+			"escapeChar": "\\",
+			"firstRowAsHeader": {
+				"value": "@dataset().parm_header",
+				"type": "Expression"
+			},
+			"quoteChar": ""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
