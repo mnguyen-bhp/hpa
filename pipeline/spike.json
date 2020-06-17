@@ -49,10 +49,7 @@
 						"referenceName": "ds_dest_spike",
 						"type": "DatasetReference",
 						"parameters": {
-							"parm_blob_path": {
-								"value": "@pipeline().RunId",
-								"type": "Expression"
-							}
+							"parm_blob_path": "dir_wrk"
 						}
 					}
 				]
