@@ -5,12 +5,17 @@
 			"referenceName": "AzureBlobStorage",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"parm_blob_path": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "wrk_cust.csv",
+				"fileName": "wrk_cust1.csv",
 				"folderPath": "dir_wrk",
 				"container": "bhp-hpa"
 			},
