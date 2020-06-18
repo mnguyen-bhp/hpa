@@ -16,10 +16,10 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": {
-					"value": "@concat('wrk_cust1.',utcnow(),'.csv')",
+					"value": "@concat('wrk_cust1_',formatDateTime(utcnow(),'yyyymmddhhmmss'),'.csv')",
 					"type": "Expression"
 				},
-				"folderPath": "dir_wrk",
+				"folderPath": "working",
 				"container": "bhp-hpa"
 			},
 			"columnDelimiter": ",",
