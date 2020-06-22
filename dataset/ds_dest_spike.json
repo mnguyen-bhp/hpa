@@ -16,7 +16,10 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": "wrk_cust1.csv",
-				"folderPath": "dir_wrk",
+				"folderPath": {
+					"value": "@dataset().parm_blob_path",
+					"type": "Expression"
+				},
 				"container": "bhp-hpa"
 			},
 			"columnDelimiter": ",",

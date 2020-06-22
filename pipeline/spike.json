@@ -49,7 +49,7 @@
 						"referenceName": "ds_dest_spike_ts",
 						"type": "DatasetReference",
 						"parameters": {
-							"parm_blob_path": "working"
+							"parm_blob_path": "dir_1"
 						}
 					}
 				]
