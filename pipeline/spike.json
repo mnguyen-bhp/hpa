@@ -47,7 +47,10 @@
 				"outputs": [
 					{
 						"referenceName": "ds_dest_spike",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"parm_blob_path": "dir_2"
+						}
 					}
 				]
 			}
