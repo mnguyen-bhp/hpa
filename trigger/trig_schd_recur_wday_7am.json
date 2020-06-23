@@ -2,7 +2,7 @@
 	"name": "trig_schd_recur_wday_7am",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Started",
+		"runtimeState": "Stopped",
 		"pipelines": [
 			{
 				"pipelineReference": {
