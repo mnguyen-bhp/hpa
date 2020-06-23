@@ -1,0 +1,22 @@
+{
+	"name": "ds_dest_sftp_torrey",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SftpTorrey",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "SftpLocation",
+				"folderPath": "/upload"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
