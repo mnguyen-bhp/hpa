@@ -108,6 +108,14 @@
 										"parm_delimiter_col": {
 											"value": "@item().delimiter_col",
 											"type": "Expression"
+										},
+										"parm_partner_dir": {
+											"value": "@item().output_file_name",
+											"type": "Expression"
+										},
+										"parm_adf_pipeln_session": {
+											"value": "@pipeline().RunId",
+											"type": "Expression"
 										}
 									}
 								}

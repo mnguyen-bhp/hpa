@@ -14,6 +14,12 @@
 			},
 			"parm_delimiter_col": {
 				"type": "string"
+			},
+			"parm_partner_dir": {
+				"type": "string"
+			},
+			"parm_adf_pipeln_session": {
+				"type": "string"
 			}
 		},
 		"annotations": [],
@@ -22,7 +28,11 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": {
-					"value": "@dataset().parm_filename",
+					"value": "@concat(dataset().parm_filename,substring(replace(replace(replace(utcnow(),'-',''),'T',''),':',''),0,14),'.csv')",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@concat(dataset().parm_partner_dir,'\\',dataset().parm_adf_pipeln_session)",
 					"type": "Expression"
 				},
 				"container": "bhp-hpa"
