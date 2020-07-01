@@ -28,9 +28,7 @@
 					"sink": {
 						"type": "DelimitedTextSink",
 						"storeSettings": {
-							"type": "SftpWriteSettings",
-							"operationTimeout": "01:00:00",
-							"useTempFileRename": true
+							"type": "AzureBlobStorageWriteSettings"
 						},
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
@@ -48,8 +46,11 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "ds_dest_sftp_torrey",
-						"type": "DatasetReference"
+						"referenceName": "ds_dest_spike",
+						"type": "DatasetReference",
+						"parameters": {
+							"parm_blob_path": "dir_wip"
+						}
 					}
 				]
 			}
