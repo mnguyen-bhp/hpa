@@ -27,7 +27,7 @@
 				}
 			},
 			{
-				"name": "Wait1",
+				"name": "Wait Succeed",
 				"type": "Wait",
 				"dependsOn": [
 					{
@@ -43,7 +43,7 @@
 				}
 			},
 			{
-				"name": "Wait2",
+				"name": "Wait Failed",
 				"type": "Wait",
 				"dependsOn": [
 					{
