@@ -15,7 +15,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"functionName": "HttpTrigger1",
+					"functionName": "HttpTrigger2",
 					"method": "POST",
 					"body": {
 						"name": "Mike"
